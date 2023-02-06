@@ -1,7 +1,6 @@
 <?php
 
-$db = require_once('bootstrap.php');
+require_once('core/bootstrap.php');
 
-$tasks = $db->selectAll('tasks');
-
-require_once('index.view.php');
+require_once Router::load('routes.php')
+->direct(Request::uri(), Request::method());
