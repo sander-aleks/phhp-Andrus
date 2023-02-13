@@ -9,6 +9,7 @@ class Connection {
                 "mysql:host={$config['host']};dbname={$config['db']};charset={$config['charset']}",
                 $config['user'],
                 $config['passwd'],
+                $config['options']
              );
         } catch (\PDOException $e) {
              throw new \PDOException($e->getMessage(), (int)$e->getCode());

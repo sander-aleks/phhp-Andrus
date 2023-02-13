@@ -1,10 +1,10 @@
 <?php
 
-class Router{
+class Router {
 
     protected $routes = [
-        'GET'=>[],
-        'POST'=>[],
+        'GET' => [],
+        'POST' => [],
     ];
 
     public static function load ( $file ) {
@@ -22,9 +22,12 @@ class Router{
         $this->routes['GET'][$uri] = $controller;
 
     }
+
     public function post ( $uri, $controller ) {
         
         $this->routes['POST'][$uri] = $controller;
+
+    }
 
     public function direct ( $uri, $requestType ) {
 

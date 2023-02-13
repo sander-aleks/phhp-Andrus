@@ -7,6 +7,6 @@ return [
         'user' => 'd110071_oop',
         'passwd' => 'Emmekodu18',
         'charset' => 'utf8mb4',
+        'options' => [] 
     ]
 ];
-
